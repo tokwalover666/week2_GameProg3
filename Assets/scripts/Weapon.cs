@@ -6,7 +6,7 @@ public class Weapon
 {
     int damage_dagger = 10;
     int damage_shotgun = 30;
-    int damage_AK47;
+    int damage_AK47 = 15;
 
 
     public int Damage_dagger
@@ -29,6 +29,26 @@ public class Weapon
 
 public class DamagePowerUp
 {
+
+    //percentage powerUps
+    float concentration = 10;
+
+    //baseDamage powerUps
+    int focus = 20;
+
+    public float Concentration
+    {
+        get { return concentration; }
+        set { concentration = value; }
+    }
+    public int Focus
+    {
+        get { return focus; }
+        set { focus = value; }
+    }
+
+
+    #region lastweek
     float boostUp = 5;
 
     //Percentage Values
@@ -47,4 +67,5 @@ public class DamagePowerUp
         get { return Berserk; }
         set { Berserk = value; }
     }
+    #endregion
 }
